@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Ifrane wrapper for Cesium</title>
+  <meta name="description"
+        content="Our mission is to create the leading web-based globe and map for visualizing dynamic data. We strive for the best possible performance, precision, visual quality, ease of use, platform support, and content." />
+  
+  
+  <script src="../ThirdParty/jquery.min.js"></script>
+  
+  <style>
+  body {
+    margin: 0;
+}
+
+.btn {
+border-radius: 8px;
+    background-color: #007ea6;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+	position:absolute;
+    top: 50%;
+}
+
+.btn:hover {
+    background-color: #202020;
+    color: white;
+}
+	
+.wrapper {
+    text-align: center;
+	
+  background-image: url(resources/lod_image.jpg);
+  background-size:cover;
+  
+     background-color: #24313a;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+	height:100%;
+    top: 0;
+    z-index: -1;
+  
+}
+
+  </style>
+</head>
+
+<body>
+<div class="wrapper" id= "wrapperImage">
+	<button type="button" id="button" class="btn">
+		Tap to interact
+	</button>
+</div>
+
+<iframe id="myiFrame" data-src="model_lod.html" src="about:blank" style="position:fixed; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:-10;">
+</iframe>
+
+
+
+
+</body>
+
+<script>
+$("button").click(function(){
+    var iframe = $("#myiFrame");
+    iframe.attr("src", iframe.data("src")); 
+	var myButt = $("#button");
+	myButt.hide();	
+	
+	var wr = $("#wrapperImage");
+	wr.hide();	
+});
+
+
+
+</script>
+</html>
