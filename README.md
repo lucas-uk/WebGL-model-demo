@@ -4,7 +4,7 @@ Cesium based 3D model viewing demo in the browser (WebGL) hosted via gh-pages.
 
 To run locally use the node server i.e.
 
-    `node server.js`
+    node server.js
 
 		
 ## Demos
