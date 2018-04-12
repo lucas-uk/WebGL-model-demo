@@ -5,7 +5,6 @@ Cesium based 3D model viewing demo in the browser (WebGL) hosted via gh-pages.
 To run locally use the node server i.e.
 
     node server.js
-
 		
 ## Demos
 
@@ -18,7 +17,6 @@ https://maptopixel.github.io/WebGL-model-demo/Apps/iframe_wrapper.html
 
 https://maptopixel.github.io/WebGL-model-demo/Apps/model_shapefile_ordering.html
 ![Normals inward](images/abnormal_normals.jpg "abnormal_normals")
-
 
 - Demo showing reversed winding order for a Shapefile:
 
